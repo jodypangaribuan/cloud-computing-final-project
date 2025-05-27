@@ -19,3 +19,4 @@ jobs:
           git pull
           npm install
           pm2 restart all || pm2 start index.js --name "node-app"
+
