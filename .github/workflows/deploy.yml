@@ -13,7 +13,7 @@ jobs:
         echo "EC2_HOST: ${{ secrets.EC2_HOST }}"
         echo "EC2_KEY: ${{ secrets.EC2_KEY }}"
     - name: Deploy using SSH
-      uses: appleboy/ssh-action@v1.0 частина:3
+      uses: appleboy/ssh-action@v1.0.3  # Corrected version
       with:
         host: ${{ secrets.EC2_HOST }}
         username: ec2-user
